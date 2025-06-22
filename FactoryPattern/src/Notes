@@ -1,0 +1,18 @@
+The Factory Design Pattern is a creational design pattern
+that provides an interface for creating objects in a superclass,
+but allows subclasses to alter the type of objects that will be created.
+
+✅ When to Use:
+When the creation process is complex or involves logic.
+When you want to hide the creation logic from the client.
+When the exact type of object isn’t known until runtime.
+
+📦 Structure:
+Product (interface/abstract class): Common interface for all objects created.
+ConcreteProduct: Actual implementations.
+Factory: A class or method that returns different types of objects based on input.
+
+🔑 Advantages:
+Encapsulates object creation logic.
+Loosely coupled code – client doesn’t depend on concrete classes.
+Makes the code easier to maintain and scale.
