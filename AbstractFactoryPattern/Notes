@@ -1,0 +1,29 @@
+The Abstract Factory Pattern is a creational design pattern that provides an interface
+to create families of related or dependent objects without specifying their concrete classes.
+
+✅ When to Use:
+When your code needs to work with various families of related objects, but you don’t want it to depend on the concrete classes.
+When you want to ensure that objects from the same family are used together (e.g., DarkThemeButton with DarkThemeTextField).
+
+🧠 Real-World Analogy:
+Think of a UI toolkit:
+
+You can switch between Dark Theme and Light Theme.
+Each theme provides its own versions of buttons, text fields, etc.
+You want to use the correct version based on the selected theme without changing the client code.
+
+📦 Structure:
+AbstractFactory: Interface for creating abstract products.
+ConcreteFactory: Implements creation of concrete products.
+AbstractProduct: Common interface for product types (e.g., Button, TextField).
+ConcreteProduct: Specific implementations (e.g., DarkButton, LightButton).
+Client: Uses the factory, but only knows about abstract types.
+
+
+
+| Feature            | Factory Pattern       | Abstract Factory Pattern           |
+| ------------------ | --------------------- | ---------------------------------- |
+| Creates            | Single object         | Family of related objects          |
+| Focus on           | One product           | Multiple products from one family  |
+| Pattern complexity | Simple                | More advanced                      |
+| Usage example      | VehicleFactory -> Car | ThemeFactory -> Button + TextField |
