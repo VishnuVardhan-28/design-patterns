@@ -1,0 +1,3 @@
+The Chain of Responsibility Design Pattern is a behavioral design pattern that allows you to pass a request along a chain of handlers,
+ where each handler decides either to handle the request or pass it to the next in the chain.
+
